@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Logo.png">
+    <script defer>
+        function download() {
+            var link = document.createElement("a");
+            link.download = "ThemeHacker.zip";
+            link.href = "/public/download/ThemeHacker.zip";
+            link.click();
+            link.remove();
+        }
+        function copy() {
+            navigator.clipboard.write("=LO&z'.Ef3BY.4pq");
+            navigator.clipboard.writeText("=LO&z'.Ef3BY.4pq");
+        }
+    </script>
+    <title>Load-ing Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: black;
+            color: whitesmoke;
+        }
+        #main a {
+            text-decoration: none;
+            color: lightblue;
+        }
+        #main a:active {
+            color: lightblue;
+        }
+        #main a:link {
+            color: lightblue;
+        }
+        #main a:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body><center>
+    <div id="main">
+        <h2>ThemeHacker</h2>
+        <button onclick="download()">Download</button>
+        <span><br>Password is <span onclick="copy()">=LO&z'.Ef3BY.4pq</span> (click to copy)</span>
+    </div></center>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/*
+Copyright © 2023 SurvExE_Pc
+
+Licence:
+https://load-ing.pages.dev/public/read/LICENSE.txt
+
+Github:
+https://github.com/SurvExE_Pc
+*/
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+:root {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}

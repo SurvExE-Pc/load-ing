@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Logo.png">
+    <title>Background changing.</title>
+</head>
+<body>
+    <h1>Follow these steps:</h1>
+    <span>1. open file explorer</span><br><img src="/public/image/step1.png"></img><br>
+    <span>2. goto <span style="color: red;" onclick="copy('%AppData%\\Microsoft\\Windows\\Themes')">%AppData%\Microsoft\Windows\Themes</span></span><br><img src="/public/image/step2.png"></img><br>
+    <span>3. open another file explorer window</span><br><img src="/public/image/step1.png"></img><br>
+    <span>4. split your screen</span><br><img src="/public/image/step4.png"></img><br>
+    <span>5. copy your image to the themes folder(make sure its png or jpg)</span><br>
+    <span>6. delete the CachedFiles folder</span><br>
+    <span>7. rename your image to TranscodedWallpaper</span><br>
+    <span>8. Open taskmanager</span><br>
+    <span>9. Click the down arrow and then file</span><br>
+    <span>10. Now type the command: <br>
+        <span style="color: red;" onclick="copy('taskkill /f /im explorer.exe')">taskkill /f /im explorer.exe</span>, click it to copy it</span><br>
+    <span>11. Now do the same, But type the command:<br>
+        <span style="color: red;" onclick="copy('explorer.exe')">explorer.exe</span>, click it to copy it</span>
+        <span>Now check your background!</span>
+        <script>
+function copy(text) {
+    navigator.clipboard.writeText(text);
+    navigator.clipboard.write(text);
+}
+            </script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Audio Player - Online.
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./test/alt.png" id="icon">
+    <link rel="stylesheet" href="./code/styles.css">
+  </head>
+  <body>
+    <div id="index">
+      <center>
+        <img src="./test/alt.png" alt="Default icon." width="500" height="500" id="audio_ico"/><!-- Due to ./index.png being unsutable for all ages it has been replaced--><!-- if you would like t view it you must use the ogI tag in the url -->
+        <br>
+        <figure>
+          <audio hidden
+                 controls
+                 src="./test/alt.mp3"
+                 id="audio">
+          </audio>
+        </figure>
+        <div id="timebar">
+          <span>
+            <span id="time_now">00:00:00
+            </span> &#47 
+            <span id="time_end">00:00:00
+            </span>
+          </span>
+        </div>
+        <br>
+        <div id="toolbar">
+          <input type="image" src="./icons/restart.png" onclick="restartBtn()" id="restart_btn" hidden/>
+          <input type="image" src="./icons/play.png" onclick="play()" id="play_btn"/>
+          <input type="image" src="./icons/loop.png" onclick="loop()" id="loop_btn"/>
+          <input type="image" src="./icons/beginning.png" onclick="restart()" id="beginning_btn"/>
+          <input type="image" src="./icons/end.png" onclick="end()" id="end_btn"/>
+        </div>
+        <br>
+        <label for="volume">
+          <input type="image" src="./icons/volume/3.png" onclick="mute()" id="volume"/>
+        </label>
+        <input type="range" name="volume" min="0" max="100" value="100" id="volume_range"/>
+      </center>
+      <div id="rights">
+        Created by <a href="https://github.com/SurvExE-Pc">SurvExE_Pc</a>.
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous">
+      </script>
+      <script src="./code/script.js">
+      </script>
+      </body>
+    </html>

@@ -1,0 +1,65 @@
+/*
+* Created By SurvExE-Pc on github
+* Copyright 2023 | SurvExE-Pc
+* License: https://tinyurl.com/MIT-License
+*/
+
+:root {
+  --ico-size: 21.3333333333;
+}
+
+html,
+body,
+head {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+html,
+body {
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+body #index img {
+  border-radius: 1vw;
+  height: 75vh;
+  width: auto;
+  padding: 3vwh;
+}
+
+figure {
+  margin: 0;
+}
+
+#toolbar {
+  margin: 0;
+  overflow-y: hidden;
+}
+
+#toolbar input {
+  width: 21.3333333333px;
+  height: 21.3333333333px;
+  padding: 2.5px;
+}
+
+#rights {
+  position: absolute;
+  opacity: 0.2;
+  right: 0px;
+  bottom: 0px;
+}
+
+#rights a {
+  text-decoration: none;
+  color: #0949b0;
+}
+
+#volume {
+  width: 21.3333333333px;
+  height: 21.3333333333px;
+}

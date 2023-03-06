@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- (C) 2023 | SurvExE_Pc on github -->
+  <!-- Page data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/turbowarp-url-generator/favicon.ico">
+  <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <!-- Style sheets -->
+  <link rel="preconnect" href="/turbowarp-url-generator/" crossorigin="anonymous">
+  <link href="/turbowarp-url-generator/style.css" rel="stylesheet">
+    <link href="/turbowarp-url-generator/dropdown.css" rel="stylesheet">
+    <link href="/turbowarp-url-generator/scrollbar.css" rel="stylesheet">
+    <link href="/turbowarp-url-generator/submit.css" rel="stylesheet">
+  <!-- Start -->
+  <title id="title">TurboWarp URL Generator</title></head><body>
+    <h1 style="color: white;"><a href="https://turbowarp.org/">Turbowarp</a> URL Generator</h1>
+    <h6>If you are going to use this I recommend reading: <a href="https://docs.turbowarp.org/advanced-settings">The Documents</a></h6>
+    <div id="checks">
+    <!-- Project stuff -->
+    <div class="dropdown">
+      <button onclick="dropdown(1)" class="dropbtn"><font size="2">Project stuff</font></button>
+      <div class="dropdown-content">
+    <label for="projectid">Project Id: </label>
+    <input type="number" id="projectid" name="projectid" value="784241376"><br>
+    <span>Unshared or invalid projects will not work.</span><br><br>
+      <input type="checkbox" id="editor" name="editor">
+      <label for="editor"> Editor Mode?</label><br>
+     <span>NOT COMPATIBLE WITH EMBED OR FULLSCREEN, Xyz mirror is always started in editor mode.</span><br><br>
+      <input type="checkbox" id="fullscreen" name="fullscreen">
+      <label for="fullscreen"> Fullscreen?</label><br>
+    <span>NOT COMPATIBLE WITH EMBED OR XYZ</span><br><br>
+      <input type="checkbox" id="embed" name="embed">
+      <label for="embed"> Embed?</label><br>
+    <span>NOT COMPATIBLE WITH FULLSCREEN OR XYZ</span><br><br>
+      <input type="checkbox" id="xyz" name="xyz">
+      <label for="xyz"> XYZ Mirror?</label><br>
+    <span>NOT COMPATIBLE WITH EMBED OR FULLSCREEN OR EXPERIMENTS</span><br><br>
+    <input type="checkbox" id="turbo" name="turbo">
+    <label for="turbo"> Turbomode?</label><br><br>
+      <input type="checkbox" id="removemisclimits" name="removemisclimits">
+    </div></div>
+    <br><br><br><br><br>
+    
+    <!-- Featured extensions -->
+    <div class="dropdown">
+      <button onclick="dropdown(2)" class="dropbtn"><font size="2">Featured Extensions</font></button><span> (Is not any custom extensions that are js files)</span>
+      <div class="dropdown-content">
+    <label for="fps">Custom fps: </label>
+    <input type="range" id="fps" name="fps" value="30" min="10" max="240">&nbsp;<span id="fps_record"></span><br><br>
+      <input type="checkbox" id="interpolation" name="interpolation">
+      <label for="interpolation"> Interpolation?</label><br><br>
+      <input type="checkbox" id="fencing" name="fencing">
+      <label for="interpolation"> Fencing?</label><br><br>
+      <input type="checkbox" id="qualitypen" name="qualitypen">
+      <label for="qualtiypen"> High Quality Pen?</label><br><br>
+      <input type="checkbox" id="warptimer" name="warptimer">
+      <label for="warptimer"> Warp timer?</label><br><br>
+    </div></div><br><br><br><br><br>
+    
+    <!-- Limits -->
+    <div class="dropdown">
+      <button onclick="dropdown(3)" class="dropbtn"><font size="2">Remove Limits</font></button>
+      <div class="dropdown-content">
+      <input type="checkbox" id="infinityclones" name="infinityclones">
+      <label for="infinityclones"> Infinty Clones? &nbsp;(This overides the clone limit option below)</label><br><br>
+    <label for="customclonelimit">Clone Limit: </label>
+    <input type="number" id="customclonelimit" name="customclonelimit" value="300">&nbsp;<span>Default value is 300.</span><br><br>
+      <input type="checkbox" id="removemisclimits" name="removemisclimits">
+      <label for="removemisclimits"> Remove Miscellaneous Limits?</label><br><br>
+    </div></div><br><br><br><br><br>
+    
+    <!-- Danger zone -->
+    <div class="dropdown">
+      <button onclick="dropdown(4)" class="dropbtn"><font size="2" color="red"><strong>Danger Zone</strong></font></button>
+      <div class="dropdown-content">
+      <span>Custom Stage Size:</span><br>
+    <label for="stagewidth">&emsp;Width:  </label>
+    <input type="number" id="stagewidth" name="stagewidth" value="480">&nbsp;<span>Default value is 480.</span><br><br>
+    <label for="stageheight">&emsp;Height:  </label>
+    <input type="number" id="stageheight" name="stageheight" value="360">&nbsp;<span>Default value is 360.</span><br><br>
+      <input type="checkbox" id="disablecompiler" name="disablecompiler">
+      <label for="disablecompiler"> Disable Compiler?</label><br><br>
+      </div>
+    </div><br><br><br><br>
+    
+    <!-- Extensions -->
+    <div class="dropdown">
+      <button onclick="dropdown(5)" class="dropbtn"><font size="2">Extensions</font></button>
+      <div class="dropdown-content">
+      <a href="https://extensions.turbowarp.org/">Check out the original page!</a><br><br>
+    <input type="checkbox" id="box2d_ext" name="box2d_ext">
+    <label for="box2d_ext"> Box2D Physics?</label><br><br>
+    <input type="checkbox" id="stretch_ext" name="stretch_ext">
+    <label for="stretch_ext"> Stretch?</label><br><br>
+    <input type="checkbox" id="gamepad_ext" name="gamepad_ext">
+    <label for="gamepad_ext"> Gamepad?</label><br><br>
+    <input type="checkbox" id="files_ext" name="files_ext">
+    <label for="files_ext"> Files?</label><br><br>
+    <input type="checkbox" id="pointerlock_ext" name="pointerlock_ext">
+    <label for="pointerlock_ext"> Pointerlock?</label><br><br>
+    <input type="checkbox" id="utilites_ext" name="utilites_ext">
+    <label for="utilites_ext"> Utilites?</label><br><br>
+    <input type="checkbox" id="runtime_ext" name="runtime_ext">
+    <label for="runtime_ext"> Runtime Options?</label><br><br>
+    <input type="checkbox" id="cursor_ext" name="cursor_ext">
+    <label for="cursor_ext"> Cursor?</label><br><br>
+    <input type="checkbox" id="fetch_ext" name="fetch_ext">
+    <label for="fetch_ext"> Fetch?</label><br><br>
+    <input type="checkbox" id="bitwise_ext" name="bitwise_ext">
+    <label for="bitwise_ext"> Bitwise?</label><br><br>
+    <input type="checkbox" id="cloudlink_ext" name="cloudlink_ext">
+    <label for="cloudlink_ext"> Cloudlink?</label><br><br>
+    <input type="checkbox" id="pingcloud_ext" name="pingcloud_ext">
+    <label for="pingcloud_ext"> Ping Cloud Data?</label><br><br>
+    <input type="checkbox" id="penplus_ext" name="penplus_ext">
+    <label for="penplus_ext"> Pen plus?</label><br><br>
+    <input type="checkbox" id="sound_ext" name="sound_ext">
+    <label for="sound_ext"> Sound?</label><br><br>
+    
+      </div>
+    </div><br><br><br><br>
+    
+    <!-- Other -->
+    <div class="dropdown">
+      <button onclick="dropdown(6)" class="dropbtn"><font size="2">Other</font></button>
+      <div class="dropdown-content">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" value=""><br><br>
+        <label for="cloudhost">Cloud host: </label>
+        <input type="text" id="cloudhost" name="cloudhost" value="wss://clouddata.turbowarp.org">
+  </div>
+</div><br><br><br><br>
+    <!-- Submit button -->
+<input type="button" value="Submit" onclick="generate()" class="submit"/>
+<br><br><br><div id="footer">
+    Old version: <a href="/turbowarp-url-generator/index_old.html">Click me for old version.</a><br>
+    TurboWarp is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation.<br>
+    <a href="https://github.com/TurboWarp/">Turbowarp Github</a>&emsp;<a href="https://turbowarp.org/">Turbowarp</a>&emsp;<a href="https://mirror.turbowarp.xyz/">Turbowarp Mirror</a>
+    </div><br><br><br><span><input type="button" class="submit" value="Shorten that url!" onclick="shorten()">
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" crossorigin="anonymous">
+  <script src="/turbowarp-url-generator/dropdowns.js" crossorigin="anonymous"></script><script src="/turbowarp-url-generator/extras.js" crossorigin="anonymous"></script><script src="/turbowarp-url-generator/genu.js" crossorigin="anonymous"></script>
+  </body></html>

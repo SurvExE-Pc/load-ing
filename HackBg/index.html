@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://load-ing.pages.dev/Logo.png">
+    <script defer>
+        function download() {
+            var link = document.createElement("a");
+            link.download = "HackBg.zip";
+            link.href = "/public/download/HackBg.zip";
+            link.click();
+            link.remove();
+        }
+    </script>
+    <title>Load-ing Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: black;
+            color: whitesmoke;
+        }
+        #main a {
+            text-decoration: none;
+            color: lightblue;
+        }
+        #main a:active {
+            color: lightblue;
+        }
+        #main a:link {
+            color: lightblue;
+        }
+        #main a:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body><center>
+    <div id="main">
+        <h2>HackBG</h2>
+        <button onclick="download()">Download</button>
+    </div></center>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+html,
+body,
+head {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+}
+html,
+body {
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center_top {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.ztop {
+  z-index: 9999999999;
+}
+.border {
+  position: absolute;
+  border: 0.42rem #222629 solid;
+  border-radius: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.42rem;
+  background-color: #41484d;
+}
+.border a {
+  text-decoration: none;
+}
+.border a:link {
+  color: #3366cc;
+}
+.border a:visited {
+  color: #334ccc;
+}
+.border a:active {
+  color: #338acc;
+}
+.description {
+  left: 7.5%;
+  top: 45%;
+  transform: translate(-7.5%, -45%);
+}
+.notes {
+  right: 7.5%;
+  top: 45%;
+  transform: translate(-7.5%, -45%);
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  font-size: 0.4rem;
+}
+.remix {
+  position: absolute;
+  border: 0.02rem #4a708f solid;
+  border-radius: 0.8rem;
+  width: auto;
+  height: auto;
+  padding: 0.42rem;
+  background-color: #5b8db3;
+}
+.remix a {
+  text-decoration: none;
+}
+.remix a:link {
+  color: #3252a8;
+}
+.remix a:visited {
+  color: #2e4b99;
+}
+.remix a:active {
+  color: #385bba;
+}
+.right {
+  position: absolute;
+  right: 0px;
+  transform: translate(0%, 0%);
+}
+.remix img {
+  border: 0px #5b8db3 none;
+  border-radius: 0.32rem;
+}
+.remix img:after {
+  padding-right: 0.52rem;
+}

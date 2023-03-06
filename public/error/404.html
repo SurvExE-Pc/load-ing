@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- (C) 2023 | SurvExE_Pc on github -->
+  <!-- Page data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/Logo.png">
+  <!-- Start -->
+  <style>
+  html,body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: show;
+  }
+  body {
+  background-color: black;
+  color: whitesmoke;
+  }
+  </style>
+    <title id="title">Error {}.</title></head><body>
+    <center>
+    <img src="https://fastly.jwwb.nl/public/o/y/f/temp-mbvxeidwbvjktfhdnedn/sad-girl.gif"></img><br>
+    <h4>Error {}.</h4>
+    <h6>Try again or go to the <a href="http://anim-e.4fan.cz/">homepage</a>!</h6>
+    </center>
+    <script>
+    function getQuerystring() {
+    let output={}
+    if(window.location.search){
+    var queryParams = window.location.search.substring(1);
+    var listQueries = queryParams.split("&");
+        for(var query in listQueries) {
+        if (listQueries.hasOwnProperty(query)) {
+            var queryPair = listQueries[query].split('=');
+            output[queryPair[0]] = decodeURIComponent(queryPair[1] || "");
+        }
+    }
+    }
+    return output;};
+    const query = getQuerystring();
+    function nothing(value) {
+    return value==null||value==undefined||value=="";
+    }
+    var error;
+    if (!nothing(query.e)) {
+    error = query.e;
+    } else {
+    error = -15;
+    }
+    document.body.innerHTML=document.body.innerHTML.replaceAll("{}",error);
+    document.head.innerHTML=document.head.innerHTML.replaceAll("{}",error);
+    </script>
+    </body>
+    </html>

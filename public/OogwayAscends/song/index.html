@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Kung Fu Panda - Oogway Ascends.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://load-ing.pages.dev/public/OogwayAscends/song/index.png" id="icon">
+    <style>
+        html,body,head {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: whitesmoke;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        html,body {
+            word-wrap: break-word;
+            overflow-x: hidden;
+            overflow-y: visible;
+        }
+        body div img {
+        border-radius: 1rem;
+        height:100vh;
+        width:auto;
+        }
+        body div {
+        display: flex;
+        justify-content: center;
+        }
+        </style>
+</head>
+<body>
+<div id="index">
+<FONT size="72" id="annoying">CLICK TO START</FONT>
+<img src="/public/OogwayAscends/song/index.png" alt="Oogway Ascends." />
+</div>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
+    <script>
+    var played = false;
+    document.body.onclick = () => {
+    document.getElementById("annoying").hidden=true;
+    PlaySound = function () {
+    window.played = true;
+    var audio = new Audio('/public/OogwayAscends/song/oogway-ascends.mp3');
+    audio.loop = true;
+    audio.play(); 
+    }
+    if(played==false)
+    PlaySound()
+    }
+    </script>
+</body>
+</html

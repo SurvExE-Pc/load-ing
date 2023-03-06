@@ -1,0 +1,29 @@
+        /*
+Copyright © 2023 SurvExE_Pc
+
+Licence:
+https://tinyurl.com/MIT-License
+
+Github:
+https://github.com/SurvExE_Pc
+*/
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #595959 #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #595959;
+    border-radius: 12px;
+    border: 3px none #595959;
+  }

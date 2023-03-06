@@ -1,0 +1,31 @@
+        /*
+Copyright © 2023 SurvExE_Pc
+
+Licence:
+https://tinyurl.com/MIT-License
+
+Github:
+https://github.com/SurvExE_Pc
+*/
+        .submit {
+	background:linear-gradient(to bottom, #808080 5%, #808080 100%);
+	background-color:#808080;
+	border-radius:28px;
+	border:1px solid #808080;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:9px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.submit:hover {
+	background:linear-gradient(to bottom, #808080 5%, #808080 100%);
+	background-color:#808080;
+}
+.submit:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Logo.png">
+    <title>AES Encryptor</title>
+</head>
+<body>
+    <div id="128">
+        <h2>AES 128</h2>
+        <div id="encode128">
+            <h3>Encode</h3>
+            <span>Text:</span><br>
+            <textarea id="text128_encode"></textarea><br>
+            <span>Password:</span><br>
+            <input type="password" name="password128_encode" id="password128_encode" />
+            <input type="button" value="Encrypt" onclick="updateData(encryptAES(fetchData(0)))" />
+        </div>
+        <div id="decode128">
+            <h3>Decode</h3>
+            <span>Text:</span><br>
+            <textarea id="text128_decode"></textarea><br>
+            <span>Password:</span><br>
+            <input type="password" name="password128_decode" id="password128_decode" />
+            <input type="button" value="Decrypt" onclick="updateData(decryptAES(fetchData(1)))" />
+        </div>
+    </div>
+    <div id="256">
+        <h2>AES 256</h2>
+        <div id="encode256">
+            <h3>Encode</h3>
+            <span>Text:</span><br>
+            <textarea id="text256_encode"></textarea><br>
+            <span>Password:</span><br>
+            <input type="password" name="password256_encode" id="password256_encode" />
+            <input type="button" value="Encrypt" onclick="updateData(encryptAES(fetchData(2)))" />
+        </div>
+        <div id="decode256">
+            <h3>Decode</h3>
+            <span>Text:</span><br>
+            <textarea id="text256_decode"></textarea><br>
+            <span>Password:</span><br>
+            <input type="password" name="password256_decode" id="password256_decode" />
+            <input type="button" value="Decrypt" onclick="updateData(decryptAES(fetchData(3)))" />
+        </div>
+        <div id="return_ed">
+            <br><h2>Output:</h2><br>
+            <textarea id="return_data"></textarea>
+        </div>
+    </div>
+    <script src="/public/aesFn/aesFn.js"></script>
+    <!-- Read: -->
+    <!-- https://load-ing.pages.dev/public/read/aes_gtitlab.html -->
+    <!-- to figure out why i used gitlab -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://gitlab.com/asii/load/-/snippets/2479793/raw/main/AES.js" crossorigin="anonymous"></script>
+</body>
+</html>
